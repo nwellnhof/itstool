@@ -8,9 +8,9 @@
   <message xml:lang="de">Dies ist eine einfache Nachricht.</message>
   <message xml:lang="fr">Ceci est un message clair.</message>
   <cat:message>This message uses a prefix.</cat:message>
-  <cat:message xml:lang="cs">Tato zpráva ma předpona.</cat:message>
-  <cat:message xml:lang="de">Diese Nachricht nutzt einen Präfix.</cat:message>
-  <cat:message xml:lang="fr">Ce message utilise un préfixe.</cat:message>
+  <message xml:lang="cs">Tato zpráva ma předpona.</message>
+  <message xml:lang="de">Diese Nachricht nutzt einen Präfix.</message>
+  <message xml:lang="fr">Ce message utilise un préfixe.</message>
   <extra:alert>This message is in another namespace.</extra:alert>
   <extra:alert xml:lang="cs">Tato zpráva ma jiný jmenný prostor.</extra:alert>
   <extra:alert xml:lang="de">Diese Nachricht ist in einem anderen Namensraum.</extra:alert>

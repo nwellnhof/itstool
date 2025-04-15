@@ -26,7 +26,7 @@
      <z:段落识别 id="A34B"><z:姓名>Pippin</z:姓名> regarda depuis l'abri du manteau de <z:姓名>Gandalf</z:姓名>.</z:段落识别>
     </z:章节>
     <z:躯>
-     <i:rules version="1.0">
+     <i:rules xmlns:cml="myChineseMakupLanguage" version="1.0">
       <i:translateRule selector="//cml:作者" translate="no"/>
       <i:translateRule selector="//cml:姓名" translate="no"/>
       <i:withinTextRule selector="//cml:姓名" withinText="yes"/>
@@ -35,5 +35,4 @@
    </z:书籍>
   </insert>
  </body>
-</myMetaDoc>
-<!-- timestamp $Id: Translate1.xml,v 1.8 2007/02/02 17:36:15 ysavoure Exp $ -->
+</myMetaDoc><!-- timestamp $Id: Translate1.xml,v 1.8 2007/02/02 17:36:15 ysavoure Exp $ -->

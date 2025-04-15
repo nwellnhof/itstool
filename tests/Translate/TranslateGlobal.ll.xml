@@ -9,5 +9,4 @@
   <par id="100" title="Texte">Voici le premier paragraphe. Il contient du texte <code>un-translatable code</code>.</par>
   <par id="101" title="Not extractable text">Du texte supplémentaire.</par>
  </body>
-</myDoc>
-<!-- timestamp $Id: TranslateGlobal.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->
+</myDoc><!-- timestamp $Id: TranslateGlobal.xml,v 1.4 2007/02/02 16:55:05 srahtz3 Exp $ -->

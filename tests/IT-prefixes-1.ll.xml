@@ -13,7 +13,7 @@
           <tt:p>Faites glisser des <tt:span>pièces</tt:span> de la gauche vers la droite.</tt:p>
         </tt:div>
         <tt:div begin="6s" end="14s">
-          <tt:p>Maintenez la touche <mal:key>Ctrl</mal:key>.</tt:p>
+          <tt:p>Maintenez la touche <key>Ctrl</key>.</tt:p>
         </tt:div>
       </tt:body>
     </tt:tt>

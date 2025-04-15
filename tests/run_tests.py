@@ -336,7 +336,6 @@ class ItstoolTests(unittest.TestCase):
     def test_IT_malformed(self):
         """ Test that a malformed XML generates a proper exception """
         res = self._test_pot_generation('IT-malformed.xml', expected_status=1)
-        #self.assertTrue("libxml2.parserError" in res['errors'])
 
     def test_IT_translate_with_external_dtds_malformed(self):
         """ Test that parsing XML requiring external DTD generates exception """
@@ -363,7 +362,6 @@ class ItstoolTests(unittest.TestCase):
         self._test_translation_process('Translate/Translate3.xml', expected_status=1,
                                        outputs=[('Translate/Translate3.ll.wrong.po', None, 'll')],
                                        options='-s')
-        #self.assertTrue("libxml2.parserError" in res['errors'])
 
     def test_Translate3_wrong2(self):
         """ Test that bad XML syntax in translation is handled gracefully """

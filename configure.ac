@@ -12,7 +12,7 @@ AC_SUBST([DATADIR])
 
 AM_PATH_PYTHON([2.6])
 
-py_module=libxml2
+py_module=lxml
 AC_MSG_CHECKING(for python module $py_module)
 echo "import $py_module" | $PYTHON - &>/dev/null
 if test $? -ne 0; then
