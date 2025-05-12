@@ -864,7 +864,6 @@ class Document (object):
                             newnode.tail = prevtext
                     i += 1
 
-
     def merge_translations(self, translations, language, node=None, strict=False):
         is_root = False
         if node is None:
@@ -1026,7 +1025,8 @@ class Document (object):
         if isinstance(node, etree._Entity):
             msg.add_entity_ref(node.name)
             return
-        if isinstance(node, XMLAttr):
+        # Only allow elements
+        if isinstance(node, XMLAttr) or not isinstance(node.tag, str):
             return
         if node.get('{' + NS_ITST + '}drop', 'no') == 'yes':
             return
