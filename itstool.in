@@ -677,8 +677,18 @@ class Document (object):
                     # language information. Technically, langPointer could be
                     # any XPath expression. But if it looks like an attribute
                     # accessor, just use the attribute name.
+                    # TODO: This should probably be skipped if langPointer
+                    # equals '@xml:lang' which is the default.
                     if lp[0] == '@':
-                        self._itst_lang_attr[node] = lp[1:]
+                        name = lp[1:]
+                        if ':' in name:
+                            prefix, lname = name.split(':', 2)
+                            nsuri = node.nsmap.get(prefix)
+                            if nsuri is None:
+                                name = lname
+                            else:
+                                name = '{' + nsuri + '}' + lname
+                        self._itst_lang_attr[node] = name
         elif rule.tag == '{' + NS_ITST + '}credits':
             sel = rule.get('appendTo')
             if sel is not None:
