@@ -791,7 +791,16 @@ class Document (object):
             if val is not None:
                 if not PY3:
                     val = val.encode('utf-8')
-                parent.addContent(val)
+                if len(parent):
+                    if parent[-1].tail:
+                        parent[-1].tail += val
+                    else:
+                        parent[-1].tail = val
+                else:
+                    if parent.text:
+                        parent.text += val
+                    else:
+                        parent.text = val
         else:
             newnode = parent.makeelement(node.tag, node.attrib)
             parent.append(newnode)
